@@ -54,3 +54,7 @@ table {
 .deleteBtn {
   cursor: pointer;
 }
+
+.x-able {
+  cursor: pointer;
+}

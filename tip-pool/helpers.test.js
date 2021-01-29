@@ -49,4 +49,13 @@ describe('helpers.js tests', function () {
 
         allPayments = {};
     });
+
+    it('Should increase the number of tds in tr by 1 on appendDeleteBtn()', function(){
+        const tr = document.createElement('tr'); 
+        appendDeleteBtn(tr); 
+
+        expect(tr.children.length).toEqual(1); 
+        expect(tr.children[0].tagName).toEqual('TD');
+    });
+
 })
